@@ -1,0 +1,123 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LGUG2Z/komorebi/v0.1.30/schema.json",
+  "app_specific_configuration_path": "$Env:KOMOREBI_CONFIG_HOME/applications.json",
+  "window_hiding_behaviour": "Cloak",
+  "cross_monitor_move_behaviour": "Insert",
+  //窗口间隙
+  "default_workspace_padding": 8,
+  "default_container_padding": 8,
+  //边框
+  "border": true,
+  "border_width": 8,
+  "border_offset": -1,
+  "border_style": "Square",
+  //调整边框大小增量
+  "resize_delta": 150,
+  //主题
+  "theme": {
+    "palette": "Base16",
+    "name": "Nord",
+    "unfocused_border": "Base03",
+    "bar_accent": "Base0D"
+  },
+  //堆叠栏
+  "stackbar": {
+    "height": 40,
+    "mode": "OnStack",
+    "tabs": {
+      "width": 300
+    }
+  },
+  //动画
+  "animation":{
+    "enabled": true,
+    "duration": 100,
+    "style": "EaseInCubic",
+    "fps": 120
+  },
+  //未注释窗口透明
+  "transparency": false,
+  "transparency_ignore_rules":[
+    {
+      "kind": "Title",
+      "id": "YouTube",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "bilibili",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "抖音",
+      "matching_strategy": "Contains"
+    }
+  ],
+  "manage-rule":[
+    {
+      "kind": "Title",
+      "path": "C:\\Users\\zxw\\scoop\\apps\\mpv\\0.39.0\\mpv.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+
+  //窗口忽视规则
+  "ignore_rules": [
+    {
+      "kind": "Title",
+      "id": "Seer",
+      "matching_strategy": "Equals"
+    },
+    {
+      "kind": "Title",
+      "id": "Path of Exile 2",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Airclap",
+      "matching_strategy": "Contains"
+    },
+    {
+      "kind": "Title",
+      "id": "Listary",
+      "matching_strategy": "Contains"
+    }
+  ],
+  //窗口分布规则
+  "monitors": [
+    {
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "II",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "III",
+          "layout": "HorizontalStack"
+        },
+        {
+          "name": "IV",
+          "layout": "BSP"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "RightMainVerticalStack"
+        }
+      ]
+    }
+  ]
+}
